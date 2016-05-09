@@ -1,0 +1,23 @@
+application: stockapp571
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+  
+- url: /php
+  script: stockapp571.php
+  
+- url: /hw8
+  static_files: index.html
+  upload: index.html
+
+- url: /res/main
+  script: /res/main.js
+  
+- url: /res/styles
+  script: /res/styles.css
